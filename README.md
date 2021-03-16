@@ -42,4 +42,4 @@ Ainda no mesmo diretório `cd c:/wamp64/www` execute o comando `php artisan serv
 
 Em seguida, em outro terminal no mesmo diretório `cd c:/wamp64/www` execute o comando `php artisan migrate`
 
-Para acessar o site [http: // localhost: 8000 / documentos](http: // localhost: 8000 / documentos)
+Para acessar o site [http://localhost:8000/documentos](http://localhost:8000/documentos)
