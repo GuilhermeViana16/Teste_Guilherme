@@ -10,17 +10,17 @@ Follow all the steps step by step
 
 # Installing laravel on the wampserver
 
-Usually the Wampserver is installed in C: \ wamp64, access the terminal and run the command `cd c:/wamp64/www`
+Usually the Wampserver is installed in `c:\wamp64`, access the terminal and run the command `cd c:/wamp64/www`
 
 After that run the following command: `composer create-project laravel / laravel = 8.0 www --prefer-dist`
 
 # Preparing the environment
 
-With the laravel installed, access the link below to download the Crud .zip:
+With the laravel installed, access the link below to download the Crud `.zip`:
 
 `https://github.com/GuilhermeViana16/Teste_Guilherme/archive/main.zip`
 
-After that, copy all the folders from the zip and paste in the project created in c:/wamp64/www
+After that, copy all the folders from the `.zip` and paste in the project created in `c:/wamp64/www`
 
 # Run the site
 
