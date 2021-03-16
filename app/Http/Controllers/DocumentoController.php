@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Models\ModelDocumento;
 use App\Models\Models\ModelTipo;
 
+use App\Classes\AssinaDocumento;
+
 class DocumentoController extends Controller
 {
     private $objTipo;
