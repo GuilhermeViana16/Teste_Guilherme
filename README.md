@@ -1,31 +1,45 @@
-# Getting started (Windows 10 x64)
+# Introdução (Windows 10 x64)
 
-It is necessary that the environment has **postgresql version 10 and Wampserver** installed to generate the database and Wampserver that will run the website.
+É necessário que o ambiente tenha **postgresql versão 10 e Wampserver** instalados para gerar o banco de dados e Wampserver que irá rodar o site.
 
-# Installing wampserver (if you don't have wampserver installed)
+# Instalando o wampserver (se você não tiver o wampserver instalado)
 
-Access the link: https://www.wampserver.com/en/#wampserver-64-bits-php-5-6-25-php-7
+Acesse o link: https://www.wampserver.com/en/#wampserver-64-bits-php-5-6-25-php-7
 
-Follow all the steps step by step
+Siga todas as etapas passo a passo
 
-# Installing laravel on the wampserver
+# Instalando laravel no wampserver
 
-Usually the Wampserver is installed in `c:\wamp64`, access the terminal and run the command `cd c:/wamp64/www`
+Normalmente o Wampserver é instalado em `c:\wamp64`
 
-After that run the following command: `composer create-project laravel / laravel = 8.0 www --prefer-dist`
+É importante que todo o conteúdo presente na pasta `www` seja excluído
 
-# Preparing the environment
+Após isso acesse o terminal e execute o comando `cd c:/wamp64/www`
 
-With the laravel installed, access the link below to download the Crud `.zip`:
+# Preparando o ambiente (arquivo .zip)
+
+No terminal acesse o diretório `cd c:/wamp64/www`
+
+Depois disso, execute o seguinte comando: `composer create-project laravel/laravel=8.0 www --prefer-dist`
+
+Com o laravel instalado, acesse o link abaixo para baixar o Crud `.zip`:
 
 `https://github.com/GuilhermeViana16/Teste_Guilherme/archive/main.zip`
 
-After that, copy all the folders from the `.zip` and paste in the project created in `c:/wamp64/www`
+Depois copie todas as pastas do arquivo `.zip` e cole no projeto criado em `c:/wamp64/www`
 
-# Run the site
+# Preparando o ambiente (git clone)
 
-Still in the same directory `cd c:/wamp64/www` execute the command `php artisan serve`
+No terminal acesse o diretório `cd c:/wamp64/www`
 
-Then in another terminal in the same directory `cd c:/wamp64/www` execute the command `php artisan migrate`
+Após isso rode `git clone https://github.com/GuilhermeViana16/Teste_Guilherme.git`
 
-Para acessar o site [http://localhost:8000/documentos](http://localhost:8000/documentos)
+E quando finalizar instale as dependências do Laravel, com `composer install`
+
+# Gerencie o site
+
+Ainda no mesmo diretório `cd c:/wamp64/www` execute o comando `php artisan serve`
+
+Em seguida, em outro terminal no mesmo diretório `cd c:/wamp64/www` execute o comando `php artisan migrate`
+
+Para acessar o site [http: // localhost: 8000 / documentos](http: // localhost: 8000 / documentos)
