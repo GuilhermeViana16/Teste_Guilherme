@@ -20,7 +20,7 @@ Acesse sua lista de banco de dados -> abra a base de dados `postgres` -> `Schema
 
 Na coluna tipo clique com botão direito do mouse e vá em `Scripts` -> `INSERT Script`
 
-Rode o seguinte comando: `INSERT INTO public.tipo(id, nome_tipo, created_at, updated_at) VALUES (?, ?, ?, ?);`
+Rode o seguinte comando: `INSERT INTO public.tipo(id, nome_tipo, created_at, updated_at) VALUES ('1', 'Atas', '2021-03-16 12:00:00', '2021-03-16 12:00:00');`
 
 Com isso você terá um tipo de documento cadastrado e poderá cadastrar novos documentos
 
