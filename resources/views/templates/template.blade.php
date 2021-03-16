@@ -28,14 +28,13 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{url('documentos')}}">Consulta</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{url('documentos/create')}}">Cadastrar</a>
-                </li>
             </form>
         </div>
         </div>
     </nav>
 
     @yield('content')
+
+    <script src="{{url("assets/js/javascript.js")}}"></script>
 </body>
 </html>

@@ -37,7 +37,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="" class="js-del">
+                            <a href="{{url("documentos/$documentos->id")}}" class="js-del">
                                 <button class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
                             </a>
                         </td>

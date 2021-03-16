@@ -22,5 +22,8 @@
                 <input class="form-control" type="text" name="nome_arquivo" id="nome_arquivo" placeholder="Nome do Arquivo:" value="{{$documento->nome_arquivo ?? ''}}" required><br>
                 <input class="btn btn-primary" type="submit" value="@if(isset($documento)) Editar @else Cadastrar @endif">
             </form>
+            <div>
+            <a class="btn btn-primary float-right mt-3" href="{{ route('documentos.index') }}" title="Voltar"> <i class="fas fa-backward "></i> Voltar </a>
+        </div>
     </div>
 @endsection

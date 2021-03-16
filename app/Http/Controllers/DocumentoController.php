@@ -106,6 +106,7 @@ class DocumentoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $del=$this->objDocumento->destroy($id);
+        return($del)?"sim":"não";
     }
 }
