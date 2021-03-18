@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\DocumentoRequest;
 use App\Models\Models\ModelDocumento;
 use App\Models\Models\ModelTipo;
-
-use App\Classes\AssinaDocumento;
 
 class DocumentoController extends Controller
 {
@@ -46,7 +44,7 @@ class DocumentoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(DocumentoRequest $request)
     {
         $cad=$this->objDocumento->create([
             'titulo'=>$request->titulo,
@@ -90,7 +88,7 @@ class DocumentoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(DocumentoRequest $request, $id)
     {
         $this->objDocumento->where(['id'=>$id])->update([
             'titulo'=>$request->titulo,

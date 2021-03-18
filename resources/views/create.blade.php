@@ -5,6 +5,14 @@
 
     <div class="col-8 m-auto">
 
+        @if(isset($errors) && count($errors)>0)
+            <div class="text-center mt-4 mb-4 p-2 alert-danger">
+                @foreach($errors->all() as $erro)
+                    {{$erro}}<br>
+                @endforeach
+            </div>
+        @endif
+
         @if(isset($documento))
             <form name="formEdit" id="formEdit" method="post" action="{{url("documentos/$documento->id")}}">
                 @method('PUT')
